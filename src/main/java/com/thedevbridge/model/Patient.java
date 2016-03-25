@@ -1,12 +1,13 @@
 package com.thedevbridge.model;
 
+import java.io.Serializable;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.io.Serializable;
 
 /**
  * Created by marcel on 3/24/16.

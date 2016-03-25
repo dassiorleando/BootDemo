@@ -1,11 +1,11 @@
 package com.thedevbridge.service;
 
+import javax.inject.Inject;
+
+import org.springframework.stereotype.Service;
+
 import com.thedevbridge.model.Patient;
 import com.thedevbridge.repository.PatientRepository;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import javax.inject.Inject;
 
 /**
  * Created by marcel on 3/24/16.

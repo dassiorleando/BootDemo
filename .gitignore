@@ -135,3 +135,4 @@ Desktop.ini
 /.tmp
 /src/main/webapp/.sass-cache
 /src/main/webapp/bower_components
+/src/main/webapp/.idea/*

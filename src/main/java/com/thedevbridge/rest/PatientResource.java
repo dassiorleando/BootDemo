@@ -1,13 +1,14 @@
 package com.thedevbridge.rest;
 
-import com.thedevbridge.model.Patient;
-import com.thedevbridge.service.PatientService;
+import javax.inject.Inject;
+
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.inject.Inject;
+import com.thedevbridge.model.Patient;
+import com.thedevbridge.service.PatientService;
 
 /**
  * Created by marcel on 3/24/16.
