@@ -21,7 +21,7 @@ public class PatientService {
     public Patient save(Patient patient) {
         return patientRepository.save(patient);
     }
-    
+
     public Page<Patient> getPatients(int page) {
     	return patientRepository.findAll(new PageRequest(page, 2));
     }
