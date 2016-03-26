@@ -25,4 +25,8 @@ public class PatientService {
     public Page<Patient> getPatients(int page) {
     	return patientRepository.findAll(new PageRequest(page, 2));
     }
+
+	public void remove(String id) {
+		patientRepository.delete(id);
+	}
 }

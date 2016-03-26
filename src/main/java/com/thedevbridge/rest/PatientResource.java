@@ -32,4 +32,14 @@ public class PatientResource {
     public Page<Patient> getPatients(@PathVariable int page) {
     	return patientService.getPatients(page);
     }
+    
+    @RequestMapping(method = RequestMethod.PUT, produces= MediaType.APPLICATION_JSON_VALUE)
+    public Patient updatePatient(@RequestBody Patient patient) {
+        return patientService.save(patient);
+    }
+    
+    @RequestMapping(value="/{id}", method = RequestMethod.DELETE, produces= MediaType.APPLICATION_JSON_VALUE)
+    public void removePatient(@PathVariable String id) {
+        patientService.remove(id);
+    }
 }
